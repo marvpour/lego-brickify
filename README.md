@@ -1,4 +1,4 @@
-# 🧱 LegoBrick
+# 🧱 LegoBrickify
 Turn any image into a LEGO® brick blueprint
 
 ## 📌 Overview
