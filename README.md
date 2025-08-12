@@ -5,8 +5,8 @@ Turn any image into a LEGO® brick blueprint
 LegoBrickify takes an input image and analyzes it to determine the exact LEGO bricks you would need to recreate it. Whether you’re building pixel art, custom LEGO portraits, or creative designs, LegoBrickify helps you translate any image into a brick-by-brick shopping list.
 
 ## 🔥 Example:
-![Original image](mario.jpg)
-![brickified image](brickified_mario.jpg)
+<img src="mario.jpg" alt="Original image" width="50%" />
+<img src="brickified_mario.png" alt="Brickified image" width="50%" />
 
 ## 🚀 Features
 - **Image-to-Brick Conversion** – Upload any image, and get a breakdown of required LEGO bricks.
