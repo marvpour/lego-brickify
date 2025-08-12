@@ -6,6 +6,10 @@ if __name__ == '__main__':
                    (2, 6),
                    (2, 1)]
 
-    image_path = "/home/maryam/Desktop/my_image.jpg"
-    lego_mosaic = create_lego_mosaic(image_path)
+    image_path = "mario.jpg"
+
+    print("Brickify the image...")
+    lego_mosaic = create_lego_mosaic(image_path, BRICK_TYPES)
+
+    print("Showing the brickify image...")
     show_image(lego_mosaic)

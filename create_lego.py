@@ -19,24 +19,27 @@ def color_quantization(image, n_colors=24):
     return quantized
 
 
-def create_lego_mosaic(image_path, brick_size=8):
+def create_lego_mosaic(image_path, brick_types, brick_size=8):
+    print("Reading image...")
     img = cv2.imread(image_path)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     # Resize image to fit brick sizes
+    print("Resizing...")
     h, w = img.shape[:2]
     new_h = (h // brick_size) * brick_size
     new_w = (w // brick_size) * brick_size
     img = cv2.resize(img, (new_w, new_h))
 
-    # Apply color quantization
+    print("Applying color quantization...")
     img_quantized = color_quantization(img)
 
     mosaic = np.zeros((new_h, new_w, 3), dtype=np.uint8)
 
+    print("Map to brick types...")
     for y in range(0, new_h, brick_size):
         for x in range(0, new_w, brick_size):
-            brick_type = random.choice(BRICK_TYPES)
+            brick_type = random.choice(brick_types)
             brick_h, brick_w = brick_type
 
             if y + brick_h * brick_size <= new_h and x + brick_w * brick_size <= new_w:
