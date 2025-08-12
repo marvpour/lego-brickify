@@ -1,4 +1,6 @@
 # 🧱 LegoBrickify
+<img width="1024" height="1024" alt="ChatGPT Image Aug 12, 2025, 12_16_57 PM" src="https://github.com/user-attachments/assets/6dd2903e-8f54-4446-99fa-025d9d8992ca" />
+
 Turn any image into a LEGO® brick blueprint
 
 ## 📌 Overview
