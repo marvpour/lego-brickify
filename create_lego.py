@@ -68,6 +68,6 @@ def show_image(lego_mosaic, width=7, height=7):
     plt.figure(figsize=(width, height))
     plt.imshow(lego_mosaic)
     plt.axis('off')
-    plt.title('LEGO Mosaic')
+    plt.title('Brickified Image')
     plt.show()
 
